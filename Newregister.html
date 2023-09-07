@@ -10,53 +10,124 @@
         {
             background-color:aliceblue;
             width: 500px;
+            height: 600px;
             margin: auto;
+            border-radius: 14px;
         }
+        .border
+        {
+            margin: auto;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            height: 560px;
+            width: 450px;
+            border: solid;
+            border-radius: 14px;
+            color: midnightblue;
+        }
+        .create
+        {
+            color:mediumslateblue;
+            font-size: 27px;
+            font-weight: bold;
+            height: 60px;
+        }
+        .name
+        {
+            font-size: 21px;
+            margin-left:-30px ;
+            height: 45px;
+
+        }
+        .name_input
+        {
+            border-radius: 10px;
+            width: 250px;
+            height: 28px;
+            font-size: 21px;
+            text-align: center;
+        }
+        .psss
+        {
+            border-radius: 10px;
+            height: 28px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .gender
+        {
+            font-size: 21px;
+            margin-left:-86px ;
+            height: 45px;
+        }
+        .creat
+        {
+            margin: auto; 
+        }
+        .button_c
+        {
+            width:160px ;
+            height: 36px;
+            border-radius: 12px;
+            font-size: 17px;
+            background-color: rgb(147, 165, 199);
+        }
+        .button_c:hover
+        {
+            background-color: rgb(70, 43, 226);
+        }
+      
     </style>
 
 </head>
 <body style="background-color: midnightblue;">
     <div class="new">
     <form action="" >
-        <fieldset>
+        <fieldset class="border">
             <legend>New Register</legend>
-            CREATE NEW ACCOUNT
-            <div>
-               First Name: <input type="text" required >
+            <div class="create">
+                CREATE A NEW ACCOUNT
+            </div>
+            <div class="name">
+               First Name:&ensp; &ensp;<input type="text" required class="name_input">
                 
             </div>
-            <div>
-                Last Name:  <input type="text" required >
+            <div class="name">
+                Last Name: &ensp; &ensp;<input type="text" required  class="name_input">
             </div>
-           <div>
-             Date of Birth :<input type="date">
+           <div class="name">
+             Date of Birth:  &ensp;<input type="date" class="name_input">
            </div>
             
-            <div>
-             Gender 
+            <div class="gender">
+             Gender: &emsp; &emsp; &nbsp; &emsp;
                 <input type="radio" value="male" id="Male" name="Gender">male
                 <input type="radio" value="female" id="female" name="Gender">female
             </div>
-            <div>
-                Moblie No:<input type="number" name="number" >
+            <div class="name">
+              Moblie No:&emsp; &ensp;<input type="number" name="number" class="name_input" >
             </div>
            
-            <div>
-                Email: <input type="email">
+            <div class="name">
+                Email: &emsp;&emsp;&ensp; &emsp;<input type="email" class="name_input">
             </div>
-           <div>
-            Create password :<input type="password">
+           <div class="name">
+            Create password: &emsp;&ensp;<input type="password" class="psss"  placeholder="6-8 character">
            </div>
-           <div></div>
-             Conform passowrd:<input type="password">
-             <div>
-                <div>
-                    <input type="submit" value="create">
+           <div class="name">
+            Conform passowrd: &ensp;<input type="password" class="psss" placeholder="6-8 character">
+           </div>
+             
+             <br>
+                <div class="creat">
+                    <input type="submit" value="Create" class="button_c"> &emsp;
+                    <input type="reset" class="button_c">
                 </div>
-                <div>
-                    <input type="reset">
-                </div>
-             </div>
+                
+                    
+                
+             
              
            
         </fieldset>
