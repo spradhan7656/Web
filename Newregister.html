@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New register</title>
+    <link rel="icon" href="icons8-lock-50.png" type="image/x-icon">
     <style>
         .new
         {
             background-color:aliceblue;
+            width: 500px;
+            margin: auto;
         }
     </style>
 
@@ -17,33 +20,45 @@
     <form action="" >
         <fieldset>
             <legend>New Register</legend>
-            <label for="name" >Name</label>
-            <select name="name" id="name" >
-                <option > select</option>
-                <option value="Mr.">Mr.</option>
-                <option value="Mrs.">Mrs.</option>
-                <option value="others">Others</option>
-            </select>
+            CREATE NEW ACCOUNT
+            <div>
+               First Name: <input type="text" required >
+                
+            </div>
+            <div>
+                Last Name:  <input type="text" required >
+            </div>
+           <div>
+             Date of Birth :<input type="date">
+           </div>
             
-            <input type="text" id="username" required="">
-            <br><br>
-            Date of Birth
-            <input type="date">
-             <br><br>
-
-            <label for="Gender">Gender 
+            <div>
+             Gender 
                 <input type="radio" value="male" id="Male" name="Gender">male
                 <input type="radio" value="female" id="female" name="Gender">female
-            </label>
-            <br>
-            <br>
-            Moblie No.
-            <input type="number" name="number" >
-            <br><br>
-            Email <input type="email"><br><br>
-            Create password <input type="password"><br><br>
-            Conform passowrd<input type="password"> <br><br>
-            <input type="submit" value="create"><input type="reset">
+            </div>
+            <div>
+                Moblie No:<input type="number" name="number" >
+            </div>
+           
+            <div>
+                Email: <input type="email">
+            </div>
+           <div>
+            Create password :<input type="password">
+           </div>
+           <div></div>
+             Conform passowrd:<input type="password">
+             <div>
+                <div>
+                    <input type="submit" value="create">
+                </div>
+                <div>
+                    <input type="reset">
+                </div>
+             </div>
+             
+           
         </fieldset>
     </div>
 
