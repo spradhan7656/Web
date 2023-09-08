@@ -18,31 +18,45 @@
         
         .page
         {
+            width: 395px;
+            height: 68px;
            
             font-weight: bold;
             text-align: center;
             font-size: 30px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: cornflowerblue;
+            padding-top:40px ;
+            
+        }
+        .button_c
+        {
+           
+            margin-left: 88px;
+            width:230px; height:30px; border-radius: 10px; background-color: lightblue;
+            font-size: 16px;
+        }
+        .button_c:hover
+        {
+            background-color:cornsilk;
+            color: initial;
         }
 
     </style>
 </head>
-<body style="background-color: rgb(27, 6, 119);"><div class="main">
-    <div class="form">
-        <div class="page">
+<body style="background-color: rgb(27, 6, 119);">
+<div class="main">
+     <div class="page">
             Forget Password
         </div> 
-    </div>
-    <div class="emaill">
-        <div>
-            Email 
-        </div>
-        <input type="email" placeholder="Enter your email">
+        <input type="email" placeholder="Enter your email" style="width: 300px; height:30px;
+        border-radius: 10px; margin-left: 45px; font-size: 17px;" required>
         <br>
         <br>
-        <input type="submit" value="reset passowrd">
-    </div>
+        <br>
+        
+        <input type="submit" value="Reset passowrd" class="button_c"  >
+   
 </div>
 </body>
 </html>
